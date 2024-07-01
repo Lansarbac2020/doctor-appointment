@@ -2,14 +2,15 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
 
-function DoctorList({doctorList}) {
+function DoctorList({doctorList,heading='Popular Doctors'}) {
   return (
     <div className='mb-10 px-9'>
-        <h2 className='font-bold text-xl '>Popular Doctors</h2>
+        <h2 className='font-bold text-xl '>{
+        heading}</h2>
         <div className='grid sm:grid-cols-2 grid-cols-2 md:grid-cols-3 
             gap-7 mt-4
             lg:grid-cols-4'>
-           {doctorList&&doctorList.map((doctor, index)=>(
+           {doctorList.length>0 ?doctorList.map((doctor, index)=>(
             <div key={index} className='border-[1px] rounded-lg p-3 cursor-pointer
             hover:shadow-sm transition-all ease-in-out hover:border-primary'>
                 <Image src={doctor.attributes?.image?.data[0]?.attributes?.url}
@@ -27,7 +28,16 @@ function DoctorList({doctorList}) {
                 mt-2 cursor-pointer hover:bg-primary hover:text-white hover:scale-105'>Book Now</h2>
                 </div>
             </div>
-           ))} 
+           )):
+          //  skeleton
+
+          [1,2,3,4,5,6].map((item,index)=>(
+            <div className='h-[200px] bg-slate-100 w-full rounded-lg animate-pulse'>
+
+            </div>
+          ))
+         
+          } 
         </div>
     </div>
   )

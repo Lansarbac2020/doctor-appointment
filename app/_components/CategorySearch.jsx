@@ -5,6 +5,7 @@ import { Search } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import GlobalApi from '../_utils/GlobalApi'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function CategorySearch() {
 
@@ -33,13 +34,26 @@ useEffect(() => {
     </div>
      {/* Display list of category */}
      <div className='mt-5 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
-     {categoryList.map((item,index)=>index<6&&(
+     {categoryList.length>0?categoryList.map((item,index)=>index<6&&(
+      <Link href={'/search/'+item.attributes.Name}> 
        <div key={index} className='flex flex-col text-center items-center
        p-5 bg-green-50 m-2 rounded-lg gap-2 hover:scale-105 transition-all ease-in-out cursor-pointer'>
         <Image src={item.attributes?.icon?.data[0].attributes.url} width={50} height={50} alt={item.attributes.Name}/>
         <label className='text-green-600 text-sm font-semibold'>{item?.attributes?.Name}</label>
        </div>
-     ))}
+      </Link>
+      
+     ))
+     :
+     [1,2,3,4,5,6].map((item,index)=>(
+       <div className='h-[120px] w-[130px] m-2 bg-slate-100 animate-pulse rounded-lg'>
+        </div>
+    ))
+      
+
+   
+     
+     }
 </div>
 
     </div>

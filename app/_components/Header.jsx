@@ -17,7 +17,7 @@ function Header() {
         {
             id:1,
             name: 'Home',
-            path:'/home'
+            path:'/'
         },
         {
             id:2,
@@ -58,7 +58,7 @@ function Header() {
            <PopoverContent className='w-44'>
             <ul className='flex flex-col gap-2'>
            <li className='cursor-pointer hover:text-primary'>Profile</li>
-           <li className='cursor-pointer hover:text-primary'>My Booking</li>
+           <Link href='/mybooking' className='cursor-pointer hover:text-primary'>My Booking</Link>
             <li className='cursor-pointer hover:text-primary'>  <LogoutLink>
             Logout
                 </LogoutLink> </li>

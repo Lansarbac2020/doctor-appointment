@@ -6,6 +6,7 @@ import CategorySearch from "./_components/CategorySearch";
 import DoctorList from "./_components/DoctorList";
 import GlobalApi from "./_utils/GlobalApi";
 import { useEffect, useState } from "react";
+import Testimonial from "./_components/Testimonial";
 
 export default function Home() {
 
@@ -30,7 +31,8 @@ export default function Home() {
      <CategorySearch/>
      {/* doctor list */}
 
-     <DoctorList doctorList={doctorList}/>
+     <DoctorList doctorList={doctorList}/>\
+     <Testimonial/>
    </div>
   );
 }

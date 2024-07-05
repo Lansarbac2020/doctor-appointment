@@ -46,11 +46,13 @@ function MyBooking() {
   <TabsContent value="upcoming">   
   <BookingList 
   bookingList={filterUserBooking('upcoming')}
+  updateRecord={()=>getUserBookingList()}
   expired={false}
   />
    </TabsContent>
   <TabsContent value="expired">
     <BookingList bookingList={filterUserBooking('expired')}
+    updateRecord={()=>getUserBookingList()}
     expired={true}
     /></TabsContent>
 </Tabs>

@@ -30,8 +30,4 @@ npm install
 # or
 yarn install
 
-3.  
-cd backend
-npm install
-# or
-yarn install
+

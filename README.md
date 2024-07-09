@@ -16,4 +16,13 @@
 - npm or yarn
 - PostgreSQL
 
+# 1.LandingPage
+![Screenshot from 2024-07-09 12-40-08](https://github.com/Lansarbac2020/doctor-appointment/assets/127045164/89def16e-be5d-489e-861c-19aed2768f08)
+# 2.Booking page (upcoming and expired appointment)
+![Screenshot from 2024-07-09 12-41-16](https://github.com/Lansarbac2020/doctor-appointment/assets/127045164/4bf245f5-c2b4-42a2-aff6-af216ae0e811)
+# 3. Doctor details screen
+![Screenshot from 2024-07-09 12-44-17](https://github.com/Lansarbac2020/doctor-appointment/assets/127045164/42ad416b-f2cf-40d0-99df-08806e16e5c3)
+# 4. Appointment screen
+![Screenshot from 2024-07-09 12-40-49](https://github.com/Lansarbac2020/doctor-appointment/assets/127045164/8488ecbe-37bb-4d41-baa9-2bcd7f596ab3)
+
 

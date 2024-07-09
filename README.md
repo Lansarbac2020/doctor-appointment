@@ -16,18 +16,4 @@
 - npm or yarn
 - PostgreSQL
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/book-a-doctor-appointment.git
-   cd book-a-doctor-appointment
-2. Install frontend dependencies:
-
-bash
-Copy code
-cd frontend
-npm install
-# or
-yarn install
-
 

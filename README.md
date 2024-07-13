@@ -5,7 +5,7 @@
 
 ## Technologies Used
 - **Frontend:** [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [shadcn](https://shadcn.dev/)
-- **Backend:** [Strapi](https://strapi.io/) (Headless CMS), [Postgres](https://www.postgresql.org/)
+- **Backend:** [Strapi](https://strapi.io/) (Headless CMS), [Postgres](https://www.postgresql.org/) (database)
 - **Authentication and Authorization:** [Kinde](https://kinde.com/)
 - **Deployment:** [Vercel](https://vercel.com/) (Frontend Deployment), [onRender](https://render.com/) (Backend Deployment)
 
